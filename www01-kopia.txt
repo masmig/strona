@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<img src="hello_01.jpg" width="800">
+
+<h1>Hi!</h1>
+
+<p>My name is Małgo Śmigla and I'm a graphic designer.</p>
+
+</body>
+</html>
