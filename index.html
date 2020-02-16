@@ -5,8 +5,14 @@
 
 <style>
 
+body {
+  margin:0 auto;
+  Font-family: helvetica;
+  Font-size:24px;
+}
+
 div {
-Margin:10px;
+Margin:0px;
 }
 
 H1 {
@@ -70,7 +76,11 @@ Font-family: helvetica;
 font-size: 24px;
 }
 
-a:link, a:visited {
+a {
+
+}
+
+#menu a:link, #menu a:visited {
   background-color: rgba(0,0,0,0);
   color: black;
   padding: 10px 70px;
@@ -80,14 +90,115 @@ Opacity:100%;
   display: inline-block;
 }
 
-a:hover, a:active {
+#menu a:hover, #menu a:active {
 Color: white;
 background-color: black;
 -webkit-transition-duration: 0.5s; /* Safari */
   transition-duration: 0.5s;
 }
 
+.obrazek:hover {
+Color:black;
+Border: solid 2px red;
+}
 
+#menu a:hover, #menu{
+}
+
+#menu img {
+}
+
+#logo_m {
+}
+
+.img600x400 {
+Width:400px;
+Height:600px;
+Border:0px;
+Margin:70px,20px;
+
+}
+
+.img600x400:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.container {
+  position: relative;
+  width: 50%;
+  overflow:auto;
+}
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.image {
+  display: block;
+  width: 600px;
+  height: 400px;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  width: 600px;
+  opacity: 0;
+  transition: .5s ease;
+  /*background: linear-gradient(to bottom right, #66ffcc 0%, #ff66ff 100%);*/
+  filter:blur(4px);
+}
+
+.img01{
+  background-image: url("WWW_600x400_04.jpg");
+}
+
+.img02{
+  background-image: url("WWW_600x400_03.jpg");
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+  filter:none;
+}
+
+.img03{
+  background-image: url("36_DOT_01");
+}
+
+.img04{
+  background-image: url("WWW_600x400_06.jpg");
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-family: helvetica
+
+  /*
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+
+  text-align: center;
+  padding: 20px 20px;
+  Line-height:1.4;
+  position: absolute;
+  top:0;
+  left:0;
+
+}
+
+.blur {filter: blur(4px);}
 
 </style>
 </head>
@@ -95,15 +206,15 @@ background-color: black;
 
 <body>
 <div class="tekst1">
-<div style="position:sticky; top:0;">
-<img src="M_01.png" height="60px" style="margin:10px 70px">
-<ul>
-  <li><a href="/portfolio">portfolio</a></li>
-  <li><a href="/aboutme">about me</a></li>
-  <li><a href="/contact">contact</a></li>
-</ul>
-</div>
 
+<div id="menu" style="position:sticky; top:0;">
+	<img id="logo_m" src="M_01.png" height="60px" style="margin:10px 70px">
+	<ul>
+ 		 <li><a href="portfolio">portfolio</a></li>
+ 		 <li><a href="aboutme">about me</a></li>
+ 		 <li><a href="contact">contact</a></li>
+	</ul>
+</div>
 
 <br>
 <img src="hello_01.jpg" width="700" style="margin:30px 70px">
@@ -115,26 +226,87 @@ background-color: black;
 <button>#logo</button>
 <button>#visual identification</button>
 <button>#web design</button>
-<button>#editorial design</button>
+<button>#book design</button>
+<button>#letters</button>
 </div>
 
 <br>
 <br>
 <br>
-<img src="M&B_WWW_Mockup_02.jpg" height="350" style="float:left margin:70,0">
-<img src="M&B_WWW_Mockup_02.jpg" height="350" style="float:right margin:70,0">
-<img src="M&B_WWW_Mockup_02.jpg" height="350" style="float:left margin:70,0">
-<img src="M&B_WWW_Mockup_02.jpg" height="350" style="float:right margin:70,0">
-<img src="M&B_WWW_Mockup_02.jpg" height="350" style="float:left margin:70,0">
-<img src="M&B_WWW_Mockup_02.jpg" height="350" style="float:right margin:70,0">
+<br>
+<div style="overflow: auto;">
+  <!--
+  <a class="img600x400" href="malgosiaandbartek"><img src="WWW_600x400_04.jpg" height="400" style="float:left"> </a>
+  <a class="img600x400" href="diginail"><img src="WWW_600x400_03.jpg" height="400" style="float:right"> </a>
+  <a class="img600x400" href="36daysoftype01"><img src="36_DOT_01" height="400" style="float:left"> </a>
+  <a class="img600x400" href="3triteam"><img src="WWW_600x400_06.jpg" height="400" style="float:right"> </a>
+  <a class="img600x400" href="audioartfestival"><img src="WWW_600x400_07.jpg" height="400" style="float:left"> </a>
+  <a class="img600x400" href="rewolucje1968"><img src="WWW_600x400_08.jpg" height="400" style="float:right"> </a>
+-->
+
+<div class="container left">
+  <a class="img600x400" href="malgosiaandbartek"><img src="WWW_600x400_04.jpg" class="image">
+  <div class="overlay img01">
+    <div class="text">Travel blog by Małgosia&Bartek — visual communication and web design</div>
+  </div>
+  </a>
+</div>
+
+<div class="container right">
+  <a class="img600x400" href="diginail"><img src="WWW_600x400_03.jpg" class="image">
+  <div class="overlay">
+    <div class="text">Digi Nail</div>
+  </div>
+  </a>
+</div>
+
+<div class="container left">
+  <a class="img600x400" href="36daysoftype01"><img src="36_DOT_01" class="image">
+  <div class="overlay">
+    <div class="text">36 Days Of Type — letter design challenge</div>
+  </div>
+  </a>
+</div>
+
+<div class="container right">
+  <a class="img600x400" href="3triteam"><img src="WWW_600x400_06.jpg" class="image">
+  <div class="overlay img04">
+    <div class="text">3triteam — visual communication for triathlon team</div>
+  </div>
+  </a>
+</div>
+
+<div class="container left">
+  <a class="img600x400" href="audioartfestival"><img src="WWW_600x400_07.jpg" class="image">
+  <div class="overlay">
+    <div class="text">Audio Art Festival — visual communication for Cracow's contemporary music festival</div>
+  </div>
+  </a>
+</div>
+
+<div class="container right">
+  <a class="img600x400" href="rewolucje1968"><img src="WWW_600x400_08.jpg" class="image">
+  <div class="overlay">
+    <div class="text">Rewolucje 1968 — book redesign</div>
+  </div>
+  </a>
+</div>
+
+</div>
+
 
 <br>
 <br>
+<br>
+<br>
+<br>
+
 <div>
 <h1> Let's stay in touch! <br> hello@malgosmigla.com
 </h1>
-
+</div>
 
 </div>
+
 </body>
 </html>
