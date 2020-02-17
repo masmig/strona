@@ -47,18 +47,17 @@ float: right
 text-align: center;
 text-decoration: none;
 Font-family: 'poppins';
+font-weight: 300;
  font-size: 24px;
 -webkit-transition-duration: 0.5s; /* Safari */
   transition-duration: 0.5s;
-filter:blur(1px);
 }
 
 button:hover {
-  background-color: white;
+  background-color: black;
   font-family: 'poppins';
-  font-weight: 400;
-  color: black;
-  filter:none;
+  font-weight: 300;
+  color: white;
 }
 
 ul {
@@ -78,7 +77,7 @@ border: none;
 color: black;
 text-align: center;
 Font-family: 'poppins';
-font-weight: 700;
+font-weight: 400;
 font-size: 24px;
 }
 
@@ -93,15 +92,13 @@ Opacity:100%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  filter:blur(1px);
 }
 
 #menu a:hover, #menu a:active {
-Color: black;
-background-color: rgba(0,0,0,0);
+Color: white;
+background-color: black;
 -webkit-transition-duration: 0.5s; /* Safari */
   transition-duration: 0.5s;
-  filter:none;
 }
 
 .obrazek:hover {
@@ -209,7 +206,44 @@ Margin:70px,20px;
   opacity: 0;
   -webkit-transition-duration: 0.6s; /* Safari */
     transition-duration: 0.6s;
+}
 
+.text-opis {
+  color: black;
+  font-family: 'poppins', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  padding: 20px 50px;
+  Line-height:1.4;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+  -webkit-transition-duration: 0.6s; /* Safari */
+    transition-duration: 0.6s;
+}
+
+.container:hover .text-opis {
+  opacity: 1;
+}
+
+.text-title {
+  color: black;
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
+  text-align: left;
+  padding: 20px 50px;
+  Line-height:1.4;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+  -webkit-transition-duration: 0.6s; /* Safari */
+    transition-duration: 0.6s;
+}
+
+.container:hover .text-title {
+  opacity: 1;
 }
 
 .blur {filter: blur(4px);}
@@ -266,37 +300,37 @@ Margin:70px,20px;
 
 <div class="container left">
   <a class="img600x400" href="malgosiaandbartek"><img src="WWW_600x400_04.jpg" class="image">
-  <div class="text"><b>Małgosia&Bartek</b> <br> visual communication and web design for Małgosia&Bartek's travel blog</div>
+  <div class="text-opis"> <div class="text-title">Małgosia&Bartek</div> <br> visual communication and web design for Małgosia&Bartek's travel blog</div>
   </a>
 </div>
 
 <div class="container right">
   <a class="img600x400" href="diginail"><img src="WWW_600x400_03.jpg" class="image">
-    <div class="text"><b>Digi Nail</b><br>visual identification for O'2nails printers seller</div>
+    <div class="text-opis"><div class="text-title">Digi Nail</div><br>visual identification for O'2nails printers seller</div>
   </a>
 </div>
 
 <div class="container left">
   <a class="img600x400" href="36daysoftype01"><img src="36_DOT_01" class="image">
-    <div class="text"><b>36 Days Of Type</b> <br>letter design challenge</div>
+    <div class="text-opis"><div class="text-title">36 Days Of Type</div><br>letter design challenge</div>
   </a>
 </div>
 
 <div class="container right">
   <a class="img600x400" href="3triteam"><img src="WWW_600x400_06.jpg" class="image">
-    <div class="text"><b>3triteam</b><br>visual communication for triathlon team</div>
+    <div class="text-opis"><div class="text-title">3triteam</div><br>visual communication for triathlon team</div>
   </a>
 </div>
 
 <div class="container left">
   <a class="img600x400" href="audioartfestival"><img src="WWW_600x400_08.jpg" class="image">
-    <div class="text"><b>Audio Art Festival</b><br>visual communication for Cracow's contemporary music festival</div>
+    <div class="text-opis"><div class="text-title">Audio Art Festival</div><br>visual communication for Cracow's contemporary music festival</div>
   </a>
 </div>
 
 <div class="container right">
   <a class="img600x400" href="rewolucje1968"><img src="WWW_600x400_07.jpg" class="image">
-    <div class="text"><b>Rewolucje 1968</b><br>book redesign</div>
+    <div class="text-opis"><div class="text-title">Rewolucje 1968</div><br>book redesign</div>
   </a>
 </div>
 
