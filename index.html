@@ -111,6 +111,12 @@ Border: solid 2px red;
 #logo_m {
 }
 
+#menu{
+  position:sticky;
+  top:0;
+  z-index: 100;
+}
+
 .img600x400 {
 Width:400px;
 Height:600px;
@@ -176,25 +182,25 @@ Margin:70px,20px;
   background-image: url("WWW_600x400_06.jpg");
 }
 
-.container:hover .overlay {
+.container:hover img {
+  filter:blur(6px);
+  transition: .6s ease;
+}
+
+.container:hover .text {
   opacity: 1;
 }
 
 .text {
   color: black;
-  font-family: helvetica
-
-  /*
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);*/
-
-  text-align: center;
-  padding: 20px 20px;
+  font-family: helvetica;
+  text-align: left;
+  padding: 40px 40px;
   Line-height:1.4;
   position: absolute;
   top:0;
   left:0;
+  opacity: 0;
 
 }
 
@@ -246,49 +252,37 @@ Margin:70px,20px;
 
 <div class="container left">
   <a class="img600x400" href="malgosiaandbartek"><img src="WWW_600x400_04.jpg" class="image">
-  <div class="overlay img01">
-    <div class="text">Travel blog by Małgosia&Bartek — visual communication and web design</div>
-  </div>
+  <div class="text"><b>Travel blog by Małgosia&Bartek</b> <br> visual communication and web design</div>
   </a>
 </div>
 
 <div class="container right">
   <a class="img600x400" href="diginail"><img src="WWW_600x400_03.jpg" class="image">
-  <div class="overlay">
-    <div class="text">Digi Nail</div>
-  </div>
+    <div class="text"><b>Digi Nail</b><br>visual identification for O'2nails printers seller</div>
   </a>
 </div>
 
 <div class="container left">
   <a class="img600x400" href="36daysoftype01"><img src="36_DOT_01" class="image">
-  <div class="overlay">
-    <div class="text">36 Days Of Type — letter design challenge</div>
-  </div>
+    <div class="text"><b>36 Days Of Type</b> <br>letter design challenge</div>
   </a>
 </div>
 
 <div class="container right">
   <a class="img600x400" href="3triteam"><img src="WWW_600x400_06.jpg" class="image">
-  <div class="overlay img04">
-    <div class="text">3triteam — visual communication for triathlon team</div>
-  </div>
+    <div class="text"><b>3triteam</b><br>visual communication for triathlon team</div>
   </a>
 </div>
 
 <div class="container left">
-  <a class="img600x400" href="audioartfestival"><img src="WWW_600x400_07.jpg" class="image">
-  <div class="overlay">
-    <div class="text">Audio Art Festival — visual communication for Cracow's contemporary music festival</div>
-  </div>
+  <a class="img600x400" href="audioartfestival"><img src="WWW_600x400_08.jpg" class="image">
+    <div class="text"><b>Audio Art Festival</b><br>visual communication for Cracow's contemporary music festival</div>
   </a>
 </div>
 
 <div class="container right">
-  <a class="img600x400" href="rewolucje1968"><img src="WWW_600x400_08.jpg" class="image">
-  <div class="overlay">
-    <div class="text">Rewolucje 1968 — book redesign</div>
-  </div>
+  <a class="img600x400" href="rewolucje1968"><img src="WWW_600x400_07.jpg" class="image">
+    <div class="text"><b>Rewolucje 1968</b><br>book redesign</div>
   </a>
 </div>
 
